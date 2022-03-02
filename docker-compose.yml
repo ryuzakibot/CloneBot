@@ -5,10 +5,10 @@ services:
     image: ghcr.io/missemily2022/clonebot:new
     container_name: clonebot
     environment:
-      - telegram_token=${5029929958:AAHu0IVElgBWGWN96eQ37znCSOGPN-1NhR4}
-      - user_ids=${1048800271}
-      - group_ids=${group_ids}
-      - PORT=${8080}
+      - telegram_token=5029929958:AAHu0IVElgBWGWN96eQ37znCSOGPN-1NhR4
+      - user_ids=1048800271
+      - group_ids=-1
+      - PORT=8080
     ports:
-      - ${8080}:${8080}
+      - "8080:5000"
     restart: unless-stopped
